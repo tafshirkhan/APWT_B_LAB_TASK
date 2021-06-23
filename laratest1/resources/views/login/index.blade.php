@@ -7,13 +7,13 @@
     <title>LOGIN PAGE</title>
 </head>
 <body>
-<h1>Register </h1>
-<form method="post">
+ <h2>Login Here</h2>
+ <form method="post">
     <table>
         @csrf
         <tr>
-           <td>Username</td>
-           <td><input type="text" name="uname"></td>
+           <td>Email</td>
+           <td><input type="email" name="email"></td>
         </tr>
 
         <tr>
@@ -28,14 +28,12 @@
     </table>
    
 </form>
-    {{session('msg')}}
-
-<br>
-@foreach($errors->all() as $error)
+        {{session('msg')}}
+        <br>
+ @foreach($errors->all() as $error)
       
       {{$error}} <br>
 
 @endforeach
-    
 </body>
 </html>

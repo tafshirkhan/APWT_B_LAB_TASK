@@ -7,9 +7,9 @@
     <title>HOME PAGE</title>
 </head>
 <body>
- <h1>Welcome home  {{session('uname')}} </h1>
- <a href="/product/list">Product List</a> ||
- <a href="/product/add">Add Product</a> ||
+ <h1>Welcome to the home page </h1>
+ <a href="/system/sale">SALES DASHBOARD</a> ||
+ <a href="/system/product">PRODUCT DASHBOARD</a> ||
  <a href="/logout">Back</a>
  
     
