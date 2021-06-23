@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Validator;
+use App\Http\Requests\ProductRequest;
 
 class ProductController extends Controller
 {
@@ -24,7 +26,7 @@ class ProductController extends Controller
         return view('system.product.edit')->with('product', $product);
     }
 
-    public function updateproduct(Request $req,$id){
+    public function updateproduct(ProductRequest $req, $id){
 
         $product = Product::where('product_id', $id)
                             ->first();
@@ -35,6 +37,8 @@ class ProductController extends Controller
         $product->productname = $req->pname;
         $product->producttype = $req->ptype;
         $product->productquantity = $req->pquantity;  
+        $product->productprice = $req->pprice;  
+        $product->productstatus = $req->pstatus; 
         
         $product->save();
 

@@ -24,6 +24,10 @@
          <td>{{$product->producttype}}</td>
    </tr>
    <tr>
+         <td>Product Status</td>
+         <td>{{$product->productstatus}}</td>
+   </tr>
+   <tr>
          <td>Product Quantity</td>
          <td>{{$product->productquantity}}</td>
    </tr>

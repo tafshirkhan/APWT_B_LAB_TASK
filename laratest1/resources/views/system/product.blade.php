@@ -10,17 +10,26 @@
 <h2>PRODUCT DASHBOARD</h2>
 <table border="1">
           <tr>
-                 <td></td>
-                  <td><a href="/system/product/existing_product">Existing Product</a></td>
+                 
+                  <td></button><a href="/system/product/existing_product">Existing Product</a></button>||</td>
+         
+         
+                 
+                  <td></button><a href="/system/product/upcoming_product">Upcoming Product</a></button>||</td> 
+         
+         
+                 
+                  <td></button><a href="/system/product/add_product">Add Product</a> </button></td>
          </tr>
-         <tr>
-                 <td></td>
-                  <td><a href="/system/product/upcoming_product">Upcoming Product</a></td>
-         </tr>
-         <tr>
-                 <td></td>
-                  <td><a href="/system/product/add_product">Add Product</a></td>
-         </tr>
+         <!-- <tr>
+         <ul >
+         <button> <li><a href="/system/product/existing_product">Existing Product</a></li></button>
+         <button> <li><a href="/system/product/upcoming_product">Upcoming Product</a></li></button>
+         <button> <li><a href="/system/product/add_product">Add Product</a></li></button>
+            
+            
+        </ul>
+         </tr> -->
 
 </table>
     

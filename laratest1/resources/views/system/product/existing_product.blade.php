@@ -35,9 +35,10 @@
              <td>{{$product->productquantity}}</td> -->
 
              <td>
-                 <a href="/system/product/details/{{$product['product_id']}}">Details</a> ||
-                 <a href="/system/product/delete/{{$product['product_id']}}">Delete</a> ||
-                 <a href="/system/product/edit/{{$product['product_id']}}">Edit</a>
+              <button><a href="/system/product/details/{{$product['product_id']}}">Details</a></button> ||
+                 <button> <a href="/system/product/delete/{{$product['product_id']}}">Delete</a></button> ||
+                 <button><a href="/system/product/edit/{{$product['product_id']}}">Edit</a></button>
+                 
                  
              </td>
 

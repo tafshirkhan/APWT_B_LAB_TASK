@@ -17,12 +17,38 @@
         </tr>
 
         <tr>
+           <!-- <td>Product Type</td>
+           <td><input type="text" name="ptype" value="{{$product['producttype']}}"></td> -->
            <td>Product Type</td>
-           <td><input type="text" name="ptype" value="{{$product['producttype']}}"></td>
+           <td>
+           <select name="type">
+                        <option></option>
+                        <option value="Grocery">Grocery</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Stationary">Stationary</option>
+                        <option value="Electronic">Electronic</option>
+                    </select>
+           </td>
+        </tr>
+        <tr>
+           
+           <td>Product Status</td>
+           <td>
+           <select name="pstatus">
+                        <option></option>
+                        <option value="Upcoming">Upcoming</option>
+                        <option value="Existing">Existing</option>
+                        
+                    </select>
+           </td>
         </tr>
         <tr>
            <td>Product Quantity</td>
            <td><input type="text" name="pquantity" value="{{$product['productquantity']}}"></td>
+        </tr>
+        <tr>
+           <td>Product Price</td>
+           <td><input type="text" name="pprice" value="{{$product['productprice']}}"></td>
         </tr>
 
         <tr>
