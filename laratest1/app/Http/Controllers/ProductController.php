@@ -69,6 +69,7 @@ class ProductController extends Controller
         $product->productname = $req->pname;
         $product->producttype = $req->ptype;
         $product->productquantity = $req->pquantity;
+        $product->productprice = $req->pprice;
 
         $product->save();
         return redirect()->route('product.existproduct');

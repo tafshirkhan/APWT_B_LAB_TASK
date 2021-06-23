@@ -19,7 +19,7 @@
          </tr>
          <tr>
                  <td></td>
-                  <td><a href="/system/add_product">Add Product</a></td>
+                  <td><a href="/system/product/add_product">Add Product</a></td>
          </tr>
 
 </table>

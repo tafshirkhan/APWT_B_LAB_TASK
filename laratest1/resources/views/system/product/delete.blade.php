@@ -30,6 +30,10 @@
          <td>{{$product->productquantity}}</td>
    </tr>
    <tr>
+         <td>Product Price</td>
+         <td>{{$product->productprice}}</td>
+   </tr>
+   <tr>
          <td><h3>Are you sure!</h3></td>
          <td></td>
    </tr>

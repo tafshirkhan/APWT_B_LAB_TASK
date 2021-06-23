@@ -21,9 +21,14 @@
            <td>Product Type</td>
            <td><input type="text" name="ptype"></td>
         </tr>
+        
         <tr>
            <td>Product Quantity</td>
            <td><input type="text" name="pquantity"></td>
+        </tr>
+        <tr>
+           <td>Product Price</td>
+           <td><input type="text" name="pprice"></td>
         </tr>
 
         <tr>

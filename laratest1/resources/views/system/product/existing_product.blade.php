@@ -15,6 +15,7 @@
                  <td>Product Name</td>
                  <td>Product Type</td>
                  <td>Product Quantity</td>   
+                 <td>Product Price</td> 
                  <td>Action</td>
                   
          </tr>
@@ -26,6 +27,7 @@
              <td>{{$product['productname']}}</td>
              <td>{{$product['producttype']}}</td>
              <td>{{$product['productquantity']}}</td>
+             <td>{{$product['productprice']}}</td>
 
              <!-- <td>{{$product->product_id}}</td>
              <td>{{$product->productname}}</td>
