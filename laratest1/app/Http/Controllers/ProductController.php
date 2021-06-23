@@ -80,5 +80,20 @@ class ProductController extends Controller
         return redirect()->route('product.existproduct');
     }
 
+    public function upcomingproduct(Request $req, $id){
+       $products = new Product;
+
+       if($products->productstatus == 'Upcoming')
+       {
+           $product = Product::all();
+
+           return view('system.product.upcoming_product')->with('productlist', $product);
+
+       }
+
+
+        
+    }
+
 
 }

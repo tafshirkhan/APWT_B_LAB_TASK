@@ -41,6 +41,7 @@ Route::get('/system/product/delete/{id}', 'ProductController@deleteproduct')->na
 Route::post('/system/product/delete/{id}', 'ProductController@destroyproduct')->name('product.destroyproduct');
 Route::get('/system/product/add_product', 'ProductController@addproduct')->name('product.addproduct');
 Route::post('/system/product/add_product', 'ProductController@insertproduct')->name('product.insertproduct');
+Route::get('/system/product/upcoming_product/{id}', 'ProductController@upcomingproduct')->name('product.upcomingproduct');
 
 // Route::get('/product/list', 'ProductController@list')->name('product.list');
 // Route::get('/product/details/{id}', 'ProductController@details')->name('product.details');
