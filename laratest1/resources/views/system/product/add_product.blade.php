@@ -17,11 +17,35 @@
            <td><input type="text" name="pname"></td>
         </tr>
 
-        <tr>
+        <!-- <tr>
            <td>Product Type</td>
            <td><input type="text" name="ptype"></td>
+        </tr> -->
+        <tr>
+           <td>Product Type</td>
+           <td>
+        <select name="ptype">
+                        <option></option>
+                        <option value="Grocery">Grocery</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Stationary">Stationary</option>
+                        <option value="Electronic">Electronic</option>
+                    </select>
+           </td>
         </tr>
-        
+        <tr>
+           
+           <td>Product Status</td>
+           <td>
+           <select name="pstatus">
+                        <option></option>
+                        <option value="Upcoming">Upcoming</option>
+                        <option value="Existing">Existing</option>
+                        
+                    </select>
+           </td>
+        </tr>
+
         <tr>
            <td>Product Quantity</td>
            <td><input type="text" name="pquantity"></td>

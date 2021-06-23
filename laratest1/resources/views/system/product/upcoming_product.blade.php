@@ -9,41 +9,44 @@
 <body>
 <h2>UPCOMING PRODUCT</h2>
 <form method="post">
-    <table>
-        @csrf
-        <tr>
-           <td>Product Name</td>
-           <td><input type="text" name="pname" value="{{$product['productname']}}"></td>
-        </tr>
+<table border="1">
 
-        <tr>
-           <!-- <td>Product Type</td>
-           <td><input type="text" name="ptype" value="{{$product['producttype']}}"></td> -->
-           <td>Product Type</td>
-           <td>
-           <select name="type">
-                        <option></option>
-                        <option value="Grocery">Grocery</option>
-                        <option value="Medical">Medical</option>
-                        <option value="Stationary">Stationary</option>
-                        <option value="Electronic">Electronic</option>
-                    </select>
-           </td>
-        </tr>
-        <tr>
-           <td>Product Quantity</td>
-           <td><input type="text" name="pquantity" value="{{$product['productquantity']}}"></td>
-        </tr>
-        <tr>
-           <td>Product Price</td>
-           <td><input type="text" name="pprice" value="{{$product['productprice']}}"></td>
-        </tr>
+<tr>
+        <td>Product Id</td>
+        <td>Product Name</td>
+        <td>Product Type</td>
+        <td>Product Quantity</td>   
+        <td>Product Price</td> 
+        <td>Action</td>
+         
+</tr>
 
-        <tr>
-           <td></td>
-           <td><input type="submit" name="Update" value="Update"></td>
-        </tr>
-    </table>
+@foreach($productlist as $product)
+<tr>
+    
+    <td>{{$product['product_id']}}</td>
+    <td>{{$product['productname']}}</td>
+    <td>{{$product['producttype']}}</td>
+    <td>{{$product['productquantity']}}</td>
+    <td>{{$product['productprice']}}</td>
+
+    <!-- <td>{{$product->product_id}}</td>
+    <td>{{$product->productname}}</td>
+    <td>{{$product->producttype}}</td>
+    <td>{{$product->productquantity}}</td> -->
+
+    <td>
+     <button><a href="/system/product/details/{{$product['product_id']}}">Details</a></button> ||
+        <button> <a href="/system/product/delete/{{$product['product_id']}}">Delete</a></button> ||
+        <button><a href="/system/product/edit/{{$product['product_id']}}">Edit</a></button>
+        
+        
+    </td>
+
+
+</tr>
+@endforeach
+</table>
    
 </form>
     
