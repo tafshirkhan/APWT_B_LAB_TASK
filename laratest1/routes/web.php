@@ -32,16 +32,24 @@ Route::get('/home', 'HomeController@index')->name('home.index');
 
 Route::get('/system/sale', 'SystemController@index')->name('system.index');
 
-Route::get('/system/product', 'ProductController@index')->name('product.index');
-Route::get('/system/product/existing_product', 'ProductController@existproduct')->name('product.existproduct');
-Route::get('/system/product/edit/{id}', 'ProductController@editproduct')->name('product.editproduct');
-Route::post('/system/product/edit/{id}', 'ProductController@updateproduct')->name('product.updateproduct');
-Route::get('/system/product/details/{id}', 'ProductController@productdetails')->name('product.productdetails');
-Route::get('/system/product/delete/{id}', 'ProductController@deleteproduct')->name('product.deleteproduct');
-Route::post('/system/product/delete/{id}', 'ProductController@destroyproduct')->name('product.destroyproduct');
-Route::get('/system/product/add_product', 'ProductController@addproduct')->name('product.addproduct');
-Route::post('/system/product/add_product', 'ProductController@insertproduct')->name('product.insertproduct');
-Route::get('/system/product/upcoming_product/{id}', 'ProductController@upcomingproduct')->name('product.upcomingproduct');
+//Route::group(['middleware'=>['userverify']], function(){ 
+
+    Route::get('/system/product', 'ProductController@index')->name('product.index');
+    Route::get('/system/product/existing_product', 'ProductController@existproduct')->name('product.existproduct');
+    Route::get('/system/product/edit/{id}', 'ProductController@editproduct')->name('product.editproduct');
+    Route::post('/system/product/edit/{id}', 'ProductController@updateproduct')->name('product.updateproduct');
+    Route::get('/system/product/details/{id}', 'ProductController@productdetails')->name('product.productdetails');
+    Route::get('/system/product/delete/{id}', 'ProductController@deleteproduct')->name('product.deleteproduct');
+    Route::post('/system/product/delete/{id}', 'ProductController@destroyproduct')->name('product.destroyproduct');
+    Route::get('/system/product/add_product', 'ProductController@addproduct')->name('product.addproduct');
+    Route::post('/system/product/add_product', 'ProductController@insertproduct')->name('product.insertproduct');
+    Route::get('/system/product/upcoming_product/{id}', 'ProductController@upcomingproduct')->name('product.upcomingproduct');
+
+
+
+//});
+
+
 
 // Route::get('/product/list', 'ProductController@list')->name('product.list');
 // Route::get('/product/details/{id}', 'ProductController@details')->name('product.details');

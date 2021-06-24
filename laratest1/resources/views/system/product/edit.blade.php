@@ -56,6 +56,7 @@
            <td><input type="submit" name="Update" value="Update"></td>
         </tr>
     </table>
+    <button><a href="/system/product/existing_product">Back</a></button>
    
 </form>
     

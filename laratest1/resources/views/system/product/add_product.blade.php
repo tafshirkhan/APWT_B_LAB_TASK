@@ -60,6 +60,8 @@
            <td><input type="submit" name="Add" value=" Add"></td>
         </tr>
      </table>
+
+     <button><a href="/system/product">Back</a></button>
    
 </form>
     

@@ -36,6 +36,7 @@
          <td>{{$product->productprice}}</td>
    </tr>
 </table>
+<button><a href="/system/product/existing_product">Back</a></button>
     
 </body>
 </html>
